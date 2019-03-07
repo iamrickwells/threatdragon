@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "Pilot test",
+    "owner": "Rick Wells",
+    "description": "This is the first attempt at creating a threat model using the standard Threat Dragon application"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Pilot_test_diagram",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Greg Anderson"
+  }
+}
