@@ -2,10 +2,14 @@
   "summary": {
     "title": "Demo for Rory",
     "owner": "Rick Wells",
-    "description": "A simple model that will allo Rory to experience the simplicity of the tool in it's current implementation"
+    "description": "A simple model that will allow Rory to experience the simplicity of the tool in it's current implementation."
   },
   "detail": {
-    "contributors": [],
+    "contributors": [
+      {
+        "name": "Colin St. Claire"
+      }
+    ],
     "diagrams": [
       {
         "title": "Rory Demo",
