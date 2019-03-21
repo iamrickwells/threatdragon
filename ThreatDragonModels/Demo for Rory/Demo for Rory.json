@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "Demo for Rory",
+    "owner": "Rick Wells",
+    "description": "A simple model that will allo Rory to experience the simplicity of the tool in it's current implementation"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Rory McEntee"
+  }
+}
