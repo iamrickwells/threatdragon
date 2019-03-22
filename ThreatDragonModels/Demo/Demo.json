@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "Demo",
+    "owner": "Rick Wells",
+    "description": "Blah blah blah"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Demo",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Greg Anderson"
+  }
+}
