@@ -10,7 +10,169 @@
       {
         "title": "Demo",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 50,
+                "y": 50
+              },
+              "angle": 0,
+              "id": "0df0accd-58cf-4f72-b23b-34cbbb81a1f9",
+              "z": 1,
+              "hasOpenThreats": false,
+              "outOfScope": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 324,
+                "y": 227
+              },
+              "angle": 0,
+              "id": "e1341365-18bc-47b2-a9fd-4043f3e94cc7",
+              "z": 2,
+              "hasOpenThreats": false,
+              "privilegeLevel": "User",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Vuln_V1"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "0df0accd-58cf-4f72-b23b-34cbbb81a1f9"
+              },
+              "target": {
+                "id": "e1341365-18bc-47b2-a9fd-4043f3e94cc7"
+              },
+              "vertices": [],
+              "id": "598f998d-e5aa-4c4f-91f2-aa49afa2b71c",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.47868160449973907,
+                    "offset": 1.9865158987231553
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "flow 2",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 3,
+              "hasOpenThreats": false,
+              "protocol": "TLS1.2",
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 284,
+                "y": 421
+              },
+              "target": {
+                "x": 413,
+                "y": 396
+              },
+              "vertices": [
+                {
+                  "x": 269,
+                  "y": 212
+                },
+                {
+                  "x": 572,
+                  "y": 230
+                }
+              ],
+              "id": "c77126ff-dcf3-4808-b92f-cdd8c89f31d4",
+              "z": 4,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 513,
+                "y": 450
+              },
+              "angle": 0,
+              "id": "46480a92-cd4f-416c-aee4-612e3c89ef87",
+              "z": 5,
+              "hasOpenThreats": true,
+              "storesCredentials": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Credentials in clear text",
+                  "type": "Spoofing",
+                  "description": "This config file is simply containg the database credentials for theVuln_V1 process to access the vuln database"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "store 4"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
       }
     ],
     "reviewer": "Greg Anderson"
